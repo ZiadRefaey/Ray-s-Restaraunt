@@ -24,9 +24,7 @@
     justify-content: space-between;
     height: 8rem;
   }
-  .hamburger .bar,
-  .hamburger::before,
-  .hamburger::after {
+  .hamburger {
     display: block;
   }
 }

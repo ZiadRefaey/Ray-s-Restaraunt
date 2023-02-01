@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=League+Gothic&display=swap"
@@ -40,15 +48,21 @@
               <li class="navbar-list__item"><a href="#">Contact Us</a></li>
             </div>
           </nav>
-          <button class="hamburger is-active"><div class="bar"></div></button>
+          <button class="hamburger"><div class="bar"></div></button>
         </div>
       </div>
-      <nav class="mobile-nav hamburger-on">
-        <a href="#">Location</a>
-        <a href="#">Special deals</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-      </nav>
+      <div class="mobile-nav">
+        <div class="mobile-nav__header">
+          <img src="/Assets/WhiteLogo.png" alt="Ray's Restauraunt logo" />
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav class="mobile-nav__body">
+          <a href="#">Location</a>
+          <a href="#">Special deals</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+        </nav>
+      </div>
       <div class="content">
         <div class="hero-headlines">
           <h1>ITALY'S FINEST</h1>
