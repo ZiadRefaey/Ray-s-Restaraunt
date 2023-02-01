@@ -1,0 +1,38 @@
+@media screen and (max-width: 540px) {
+  .navbar-group__left,
+  .navbar-group__right {
+    display: none;
+  }
+  .hero .hero-headlines h1 {
+    font-size: 90px;
+    text-align: center;
+  }
+  .hero-headlines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-headlines h3 {
+    width: 80%;
+    font-size: 18px;
+  }
+  .hero .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+  }
+  .hamburger .bar,
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
+  }
+}
+@media screen and (max-width: 380px) {
+  .hero .hero-headlines h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+}
