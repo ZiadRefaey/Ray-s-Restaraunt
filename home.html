@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
@@ -12,7 +16,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=League+Gothic&display=swap"
@@ -76,64 +85,85 @@
     </header>
     <section class="featured-meals">
       <h3 class="featured-meals__header">Featured Meals</h3>
-      <div class="featured-meals__body">
-        <div class="container">
-          <div class="card">
-            <div class="card-content">
-              <div class="card-content__img">
-                <img src="/Assets/Shrimp Pasta.jpg" />
-              </div>
-              <div class="card-content__details">
-                <p>Shrimp Pasta</p>
-                <p>9$</p>
-              </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="card-content swiper-slide">
+            <div class="card-content__img">
+              <img src="/Assets/Shrimp Pasta.jpg" />
+            </div>
+            <div class="card-content__details">
+              <p>Shrimp Pasta</p>
+              <p>9$</p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-content">
-              <div class="card-content__img">
-                <img src="/Assets/pepperoni pizza.jpg" alt="Pepperoni pizza" />
-              </div>
-              <div class="card-content__details">
-                <p>Pepperoni Pizza</p>
-                <p>12$</p>
-              </div>
+          <div class="card-content swiper-slide">
+            <div class="card-content__img">
+              <img src="/Assets/Pizza 2.jpg" />
+            </div>
+            <div class="card-content__details">
+              <p>Mix Pizza</p>
+              <p>12$</p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-content">
-              <div class="card-content__img">
-                <img src="/Assets/Pizza 2.jpg" alt="Mix Pizza" />
-              </div>
-              <div class="card-content__details">
-                <p>Mix Pizza</p>
-                <p>14$</p>
-              </div>
+          <div class="card-content swiper-slide">
+            <div class="card-content__img">
+              <img src="/Assets/pepperoni pizza.jpg" />
+            </div>
+            <div class="card-content__details">
+              <p>Pepperoni/p></p>
+              <p>11$</p>
+            </div>
+          </div>
+          <div class="card-content swiper-slide">
+            <div class="card-content__img">
+              <img src="/Assets/Shrimp Pasta.jpg" />
+            </div>
+            <div class="card-content__details">
+              <p>Shrimp Pasta</p>
+              <p>9$</p>
+            </div>
+          </div>
+          <div class="card-content swiper-slide">
+            <div class="card-content__img">
+              <img src="/Assets/Shrimp Pasta.jpg" />
+            </div>
+            <div class="card-content__details">
+              <p>Shrimp Pasta</p>
+              <p>9$</p>
             </div>
           </div>
         </div>
-        <!-- <div class="featured-meals__item">
-          <div class="featured-meals__item__image item-1"></div>
-          <p>Shrimp Pasta</p>
-          <p>12$</p>
-        </div>
-        <div class="featured-meals__item">
-          <div class="featured-meals__item__image item-2"></div>
-          <p>Pepperoni Pizza</p>
-          <p>9$</p>
-        </div>
-        <div class="featured-meals__item">
-          <div class="featured-meals__item__image item-3"></div>
-          <p>Mix Pizza</p>
-          <p>14$</p>
-        </div>
-      </div> -->
       </div>
       <div class="featured-meals__footer">
-        <button><i class="fa-solid fa-chevron-left chevron"></i></button>
-        <button><i class="fa-solid fa-chevron-right chevron"></i></button>
+        <button class=".swiper-button-prev">
+          <i class="fa-solid fa-chevron-left chevron"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-chevron-right chevron .swiper-button-next"></i>
+        </button>
       </div>
     </section>
+    <section class="about">
+      <div class="about-container">
+        <div class="about-img">
+          <img src="/Assets/restaurant front.jpg" alt="Restaurant Front" />
+        </div>
+        <div class="about-description">
+          <h3 class="about-description__title">Ray's Restaurant</h3>
+          <p class="about-description__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            iste quas provident, officiis accusantium itaque corporis sint
+            excepturi incidunt suscipit voluptatum nemo ad sunt perferendis.
+            Delectus, deserunt? Laboriosam, impedit rem, qui vel, praesentium
+            explicabo deleniti sed labore maiores dolor aut! Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Totam quo cumque, dolor eius
+            soluta temporibus ullam. Facilis esse qui assumenda!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">.testimo</section>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </html>
