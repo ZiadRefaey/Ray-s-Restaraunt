@@ -23,17 +23,19 @@ var swiper = new Swiper(".swiper", {
     },
   },
 });
-document.querySelector(".hamburger").addEventListener("click", function () {
-  console.log("working");
-  mobileNav.classList.add("is-active");
-});
-xMark.addEventListener("click", function () {
-  mobileNav.classList.remove("is-active");
-});
+const body = document.querySelector(".body");
 const tabs = document.querySelectorAll(".reviews-tab");
 const tabContainer = document.querySelector(".reviews-tabs__container");
 const contentContainer = document.querySelector;
 const reviewContent = document.querySelectorAll(".reviews-content");
+document.querySelector(".hamburger").addEventListener("click", function () {
+  mobileNav.classList.add("is-active");
+  body.classList.add("scroll-hidden");
+});
+xMark.addEventListener("click", function () {
+  mobileNav.classList.remove("is-active");
+  body.classList.remove("scroll-hidden");
+});
 tabContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".reviews-tab");
   if (!clicked) return;

@@ -58,12 +58,20 @@
   }
   .reviews-tab {
     font-size: 12px;
-
-    transform: scale(50%);
+    height: 3.125rem;
+    width: 7.8rem;
+    margin-left: 10px;
+  }
+  .reviews-tab__img {
+    height: 37px;
+    width: 37px;
   }
   .reviews-tab:hover {
-    transform: scale(65%);
-    margin: 10px;
+    transform: scale(100%);
+    margin: 0;
+  }
+  .reviews-tab__job {
+    display: none;
   }
   .reviews-content__container {
     padding: 20px;
