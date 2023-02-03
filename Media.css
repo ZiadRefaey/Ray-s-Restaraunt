@@ -37,6 +37,16 @@
   .about-description p {
     font-size: 11px;
   }
+  .reviews-tab {
+    font-size: 12px;
+    height: 2.8rem;
+    width: 7rem;
+    margin-left: 5px;
+  }
+  .reviews-tab__img {
+    height: 30px;
+    width: 30px;
+  }
 }
 @media screen and (max-width: 750px) {
   .about-description p {
