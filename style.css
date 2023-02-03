@@ -305,7 +305,7 @@ body * {
   object-fit: cover;
 }
 .about-description {
-  width: 600px;
+  max-width: 600px;
   height: 80%;
   font-family: "Architects Daughter", cursive;
   color: #f3f3f3;
@@ -346,7 +346,7 @@ body * {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 66%;
+  max-width: 1056px;
   margin: auto;
   height: 40vh;
 }
@@ -369,6 +369,7 @@ body * {
   cursor: pointer;
   border: 1px transparent solid;
   transition: 0.2s all ease-in;
+  margin-left: 50px;
 }
 .reviews-tab:hover {
   margin: 10px;
@@ -399,7 +400,7 @@ body * {
   display: none;
 }
 .reviews-content__container {
-  width: 50%;
+  max-width: 500px;
   margin: auto;
   display: flex;
   flex-direction: column;
