@@ -7,10 +7,12 @@
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
+  background-color: #f3f3f3;
 }
 body * {
   z-index: 10;
 }
+
 .scroll-hidden {
   overflow-y: hidden;
 }
@@ -18,12 +20,13 @@ body * {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100vw;
   height: 13vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 15;
 }
 
 .hero {
@@ -35,6 +38,9 @@ body * {
   background-size: cover;
   position: relative;
   z-index: 10;
+}
+h1 {
+  z-index: 1;
 }
 .hero::before {
   content: "";
@@ -56,7 +62,7 @@ body * {
 }
 .navbar-list a,
 .navbar-list li {
-  color: #333;
+  color: #f3f3f3;
   text-decoration: none;
 
   list-style: none;
@@ -87,7 +93,7 @@ body * {
   cursor: pointer;
 }
 .navbar-list__item:hover {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #f3f3f3;
 }
 .hamburger {
   z-index: 120;
@@ -111,7 +117,7 @@ body * {
   width: 100%;
   height: 4px;
   margin: 0.4rem 0px;
-  background-color: #333;
+  background-color: #f3f3f3;
 }
 .mobile-nav {
   height: 100%;
@@ -189,12 +195,16 @@ body * {
   color: #f1f1f1;
   font-family: "League Gothic", sans-serif;
   font-size: 124px;
+  z-index: 1;
 }
 .content h3 {
   color: #f1f1f1;
   text-align: center;
   margin-bottom: 4rem;
   font-size: 24px;
+}
+.content .hero-headlines h3 {
+  z-index: 1;
 }
 .hero-buttons {
   display: flex;
@@ -204,7 +214,7 @@ body * {
   margin-top: 7rem;
 }
 /* Featured Meals Styling */
-.swiper {
+.swiper-featured-meals {
   width: 50%;
 }
 .swiper-pagination-bullet {
@@ -213,6 +223,7 @@ body * {
 .pagination {
   margin-bottom: 50px;
 }
+
 .featured-meals {
   height: 65vh;
   width: 100%;
@@ -460,4 +471,80 @@ body * {
 }
 .reviews-content__active {
   display: block;
+}
+/*/////// EVENTS PAGE ///////*/
+
+.hero-events {
+  background-image: url("/Assets/Events\ 2.jpg");
+}
+.title-section {
+  height: 30vh;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.title-section {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.title-section p {
+  z-index: 1;
+}
+.title-section__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.host-events {
+  background-color: #333;
+  padding: 50px 0px;
+}
+.host-events__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.host-events__text {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.host-events__text p,
+.host-events__text h3 {
+  color: #f3f3f3;
+}
+.host-events__text h3 {
+  font-size: 2.2em;
+  margin-bottom: 35px;
+}
+.host-events__text p {
+  font-size: 1.3em;
+}
+.host-events__images {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.host-events__img {
+  height: 420px;
+  margin: 1rem;
+}
+.host-events__img img {
+  height: 100%;
+  border-radius: 25px;
+  width: 100%;
+  object-fit: cover;
 }

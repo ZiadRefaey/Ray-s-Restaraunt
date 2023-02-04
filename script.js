@@ -23,6 +23,7 @@ var swiper = new Swiper(".swiper", {
     },
   },
 });
+
 const body = document.querySelector(".body");
 const tabs = document.querySelectorAll(".reviews-tab");
 const tabContainer = document.querySelector(".reviews-tabs__container");
