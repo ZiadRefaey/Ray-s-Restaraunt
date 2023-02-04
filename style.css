@@ -240,6 +240,7 @@ h1 {
   color: #333;
   font-size: 28px;
   height: 15vh;
+  z-index: 1;
 }
 .card-content {
   width: 200px;
@@ -441,6 +442,7 @@ h1 {
   height: 15vh;
   background-color: #333;
   color: #f3f3f3;
+  padding: 20px 0px;
 }
 .email-phone-number p,
 .fa-brands,
@@ -491,6 +493,7 @@ h1 {
   z-index: 1;
 }
 .title-section__container {
+  font-size: 30px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -553,7 +556,7 @@ h1 {
   padding: 100px 0px;
 }
 .rooms-header h3 {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -629,6 +632,9 @@ h1 {
   background-size: cover;
   z-index: 1;
 }
+.rooms-content__container {
+  z-index: 1;
+}
 .room p {
   font-weight: 600;
   font-size: 22px;
@@ -677,3 +683,120 @@ h1 {
 .rooms-content__active {
   display: flex;
 }
+.inquire-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  padding: 70px 0px;
+}
+.inquire-description__container {
+  width: 100%;
+}
+.inquire-description__container h3 {
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+.inquire-description__container p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.form-input__container {
+  padding: 15px 30px;
+  background-color: #d2d2d2;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+  z-index: 1;
+}
+.form-icon {
+  margin-right: 10px;
+}
+.form-input__container input {
+  z-index: 1;
+  border: none;
+  background-color: inherit;
+  padding: 10px 0px;
+  outline: none;
+  width: 80%;
+  font-size: 20px;
+}
+.form-input__container input::placeholder {
+  color: #333;
+  font-size: 20px;
+}
+
+.inquire-form__container {
+  display: grid;
+}
+.form {
+  display: flex;
+  z-index: 1;
+}
+
+.inquire-description-form__container {
+  z-index: 1;
+}
+.form-container__left {
+  width: 48%;
+  margin-right: 20px;
+}
+.form-container__right {
+  width: 48%;
+  margin-left: 20px;
+}
+.form-button {
+  padding: 15px 30px;
+  background-color: #d2d2d2;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.form-button:hover {
+  background-color: #333;
+  color: #f3f3f3;
+}
+.footer * {
+  z-index: 1;
+}
+@media screen and (max-width: 600px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container__left,
+  .form-container__right {
+    width: 100%;
+    margin: 0;
+  }
+  .inquire-description__container h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .inquire-description__container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .form-input__container {
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 17px;
+    z-index: 1;
+  }
+  .form-inpu__container input::placeholder {
+    font-size: 17px;
+  }
+  .form-button {
+    font-size: 20px;
+  }
+} ;
