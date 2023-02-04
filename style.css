@@ -548,3 +548,129 @@ h1 {
   width: 100%;
   object-fit: cover;
 }
+.rooms-header {
+  width: 100%;
+  padding: 100px 0px;
+}
+.rooms-header h3 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.rooms-header p {
+  text-align: center;
+  font-size: 21px;
+  max-width: 360px;
+  margin: auto;
+  font-weight: 200;
+}
+.rooms {
+  padding: 50px 0px;
+  width: 100%;
+  background-color: #333;
+}
+.rooms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+.rooms p,
+.rooms a {
+  color: #f3f3f3;
+}
+.rooms-tabs__container {
+  padding: 10px 30px;
+  margin-bottom: 70px;
+}
+.room-tab {
+  background-color: #333;
+  color: #f3f3f3;
+  border: none;
+  padding: 10px 30px;
+  font-size: 26px;
+  margin: 0px 5px;
+  border-radius: 10px;
+  transition: 0.4s all;
+}
+.room-tab:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+  color: #333;
+}
+.rooms-tab__active {
+  background-color: #f3f3f3;
+  color: #333;
+}
+.rooms-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1260px;
+  display: none;
+}
+.room {
+  width: 350px;
+  height: 200px;
+  margin: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.room p {
+  font-weight: 600;
+  font-size: 22px;
+}
+.room .second-p {
+  margin-bottom: 10px;
+}
+.room a {
+  font-size: 20px;
+}
+.room__1 {
+  background-image: url("./Assets/bar\ 1.jpg");
+}
+.room__2 {
+  background-image: url("./Assets/bar\ 2.jpg");
+}
+.room__3 {
+  background-image: url("/Assets/dining\ 1.jpg");
+}
+.room__4 {
+  background-image: url("/Assets/dining\ 3.jpg");
+}
+.room__5 {
+  background-image: url("/Assets/Al\ Fresco\ 2.jpg");
+}
+.room__6 {
+  background-image: url("/Assets/Al\ Fresco\ 3.jpg");
+}
+.room::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  border-radius: 25px;
+}
+.room__2::before,
+.room__5::before,
+.room__6::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.rooms-content__active {
+  display: flex;
+}
