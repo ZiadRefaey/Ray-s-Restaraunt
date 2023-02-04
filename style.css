@@ -585,6 +585,7 @@ h1 {
 .rooms-tabs__container {
   padding: 10px 30px;
   margin-bottom: 70px;
+  z-index: 1;
 }
 .room-tab {
   background-color: #333;
@@ -626,6 +627,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 1;
 }
 .room p {
   font-weight: 600;
@@ -638,6 +640,7 @@ h1 {
   font-size: 20px;
 }
 .room__1 {
+  z-index: 1;
   background-image: url("./Assets/bar\ 1.jpg");
 }
 .room__2 {
