@@ -440,7 +440,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 15vh;
   background-color: #333;
   color: #f3f3f3;
   padding: 20px 0px;
@@ -958,6 +957,7 @@ iframe {
   width: 100%;
   padding: 20px 0px;
   background-color: #333;
+  z-index: 1;
 }
 .opening-hours__container {
   width: 100%;
@@ -968,6 +968,9 @@ iframe {
   justify-content: space-evenly;
   margin: auto;
   padding: 1.6rem 0px;
+  z-index: 1;
+}
+.day-opening-hour {
   z-index: 1;
 }
 .opening-hours__container p {
@@ -1000,11 +1003,13 @@ iframe {
   margin: auto;
   font-size: 1.5rem;
   margin-bottom: 4rem;
+  z-index: 1;
 }
 .menu-tabs__item {
   padding: 1rem 3rem;
   border-radius: 1.5rem;
   transition: 0.3s all;
+  z-index: 1;
 }
 
 .menu-tabs__item:hover {
@@ -1054,6 +1059,8 @@ iframe {
   font-size: 2rem;
   cursor: pointer;
   margin: 0px 10px;
+  background-color: inherit;
+  padding: 0px 20px;
 }
 .add-button {
   border-radius: 10px;
