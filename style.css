@@ -947,3 +947,29 @@ iframe {
     width: 100%;
   }
 }
+.hero-menu {
+  background-image: url("/Assets/Menu\ 3.jpg");
+  height: 72vh;
+}
+.content-menu {
+  height: 72vh;
+}
+.menu-opening-hours {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #333;
+}
+.opening-hours__container {
+  width: 100%;
+  max-width: 1660px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 1.6rem 0px;
+}
+.opening-hours__container p {
+  color: #f3f3f3;
+  font-size: 1.5rem;
+  text-align: center;
+}
