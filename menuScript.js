@@ -9,8 +9,24 @@ const openingDays = document.querySelectorAll(".day-opening-hour");
 const tabsContainer = document.querySelector(".menu-tabs__container");
 const menuTabs = document.querySelectorAll(".menu-tabs__item");
 const menuContent = document.querySelectorAll(".menu-content");
+const inputAmount = document.querySelectorAll(".input-amount");
+const plus = document.querySelectorAll(".plus");
+const minus = document.querySelectorAll(".minus");
+const addBtn = document.querySelectorAll(".add-button");
+const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".mobile-nav");
+const xMark = document.querySelector(".fa-xmark");
+document.querySelector(".hamburger").addEventListener("click", function () {
+  mobileNav.classList.add("is-active");
+  body.classList.add("scroll-hidden");
+});
+xMark.addEventListener("click", function () {
+  mobileNav.classList.remove("is-active");
+  body.classList.remove("scroll-hidden");
+});
 const d = new Date();
 let day = d.getDay();
+// value = 0;
 
 switch (day) {
   case 1:
@@ -40,7 +56,6 @@ switch (day) {
   default:
     console.log("something went wrong");
 }
-
 tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".menu-tabs__item");
   if (!clicked) return;
@@ -53,4 +68,31 @@ tabsContainer.addEventListener("click", function (e) {
   document
     .querySelector(`.menu-content__${clicked.dataset.tab}`)
     .classList.add("menu-content__active");
+});
+
+plus.forEach((plus) => {
+  plus.addEventListener("click", function (e) {
+    const inputField = e.target.parentNode.childNodes[3];
+    value = parseInt(inputField.value);
+    value += 1;
+    inputField.value = value;
+  });
+});
+minus.forEach((minus) => {
+  minus.addEventListener("click", function (e) {
+    const inputField = e.target.parentNode.childNodes[3];
+    value = parseInt(inputField.value);
+    if (value == 0) return;
+    value -= 1;
+    inputField.value = value;
+  });
+});
+addBtn.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    const inputField = e.target.parentNode.childNodes[3];
+    value = parseInt(inputField.value);
+    if (value == 0) return;
+
+    inputField.value = "0";
+  });
 });

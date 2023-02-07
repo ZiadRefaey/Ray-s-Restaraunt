@@ -120,26 +120,30 @@
       <h3 class="menu-title">Menu</h3>
       <div class="menu-container">
         <div class="menu-tabs__container">
-          <div
-            data-tab="1"
-            class="menu-tabs__item menu-tabs__item__1 menu-tabs__active"
-          >
-            APRISTOMACO
+          <div class="tabs-left">
+            <div
+              data-tab="1"
+              class="menu-tabs__item menu-tabs__item__1 menu-tabs__active"
+            >
+              APRISTOMACO
+            </div>
+            <div data-tab="2" class="menu-tabs__item menu-tabs__item__2">
+              INSALATE
+            </div>
+            <div data-tab="3" class="menu-tabs__item menu-tabs__item__3">
+              PRIMI
+            </div>
           </div>
-          <div data-tab="2" class="menu-tabs__item menu-tabs__item__2">
-            INSALATE
-          </div>
-          <div data-tab="3" class="menu-tabs__item menu-tabs__item__3">
-            PIZZE
-          </div>
-          <div data-tab="4" class="menu-tabs__item menu-tabs__item__4">
-            DOLCI
-          </div>
-          <div data-tab="5" class="menu-tabs__item menu-tabs__item__5">
-            SENZA GLUTINE
-          </div>
-          <div data-tab="6" class="menu-tabs__item menu-tabs__item__6">
-            VEGAN
+          <div class="tabs-right">
+            <div data-tab="4" class="menu-tabs__item menu-tabs__item__4">
+              PIZZE
+            </div>
+            <div data-tab="5" class="menu-tabs__item menu-tabs__item__5">
+              DOLCI DI TERRONI
+            </div>
+            <div data-tab="6" class="menu-tabs__item menu-tabs__item__6">
+              SEZAN GLUTINE
+            </div>
           </div>
         </div>
         <div class="menu-content__container">
@@ -161,6 +165,7 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
@@ -185,6 +190,7 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
@@ -209,6 +215,7 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
@@ -233,6 +240,7 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
@@ -252,12 +260,7 @@
               </div>
               <div class="menu-item__right">
                 <button class="operation-button plus">+</button>
-                <input
-                  class="input-amount"
-                  type="number"
-                  placeholder="0"
-                  min="0"
-                />
+                <input class="input-amount" type="number" min="0" value="0" />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
                 <p class="price">15$</p>
@@ -280,6 +283,7 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
@@ -290,11 +294,11 @@
           <div class="menu-content menu-content__2">
             <div class="menu-content__item">
               <div class="menu-item__left">
-                <div class="menu-item__title"><p>Calamari alla Griglia</p></div>
+                <div class="menu-item__title"><p>A Fagiolo</p></div>
                 <div class="menu-item__description">
                   <p>
-                    grilled calamari, mixed greens, capers, onions, fresh
-                    tomatoes
+                    kidney beans, Italian tuna, red onion, tomatoes, mixed
+                    greens
                   </p>
                 </div>
               </div>
@@ -305,10 +309,86 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
-                <p class="price">20$</p>
+                <p class="price">16$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Caprese di Bufala</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    fresh buffalo milk mozzarella, marinated cherry tomatoes,
+                    olive bread crumbs, micro basil
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">23$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title">
+                  <p>Farinata con le Barbabietole</p>
+                </div>
+                <div class="menu-item__description">
+                  <p>
+                    chickpea pancake, roasted beets, heirloom carrots, ricotta
+                    salata, arugula, watercress, sunflower sprouts, pistachios,
+                    mint
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">14$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Giuggiolosa</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    mixed greens, gorgonzola, grilled red peppers, black olives,
+                    pinenuts, honey
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">18$</p>
               </div>
             </div>
           </div>
@@ -316,11 +396,11 @@
           <div class="menu-content menu-content__3">
             <div class="menu-content__item">
               <div class="menu-item__left">
-                <div class="menu-item__title"><p>Calamari alla Griglia</p></div>
+                <div class="menu-item__title"><p>Garganelli Geppetto</p></div>
                 <div class="menu-item__description">
                   <p>
-                    grilled calamari, mixed greens, capers, onions, fresh
-                    tomatoes
+                    dandelions, homemade spicy Italian sausage, fontina,
+                    parmigiano, extra-virgin olive oil
                   </p>
                 </div>
               </div>
@@ -331,10 +411,83 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
-                <p class="price">20$</p>
+                <p class="price">23$</p>
+              </div>
+            </div>
+
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Gnocchi alla Simi</p></div>
+                <div class="menu-item__description">
+                  <p>tomato sauce, fresh ricotta, basil, parmigiano</p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">22$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title">
+                  <p>Pappardelle ai Porcini e Tartufo</p>
+                </div>
+                <div class="menu-item__description">
+                  <p>
+                    Porcini, oyster and button mushrooms, onion, parsley, white
+                    wine, butter, Parmigiano, shavings of black truffle
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">33$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Pappardelle alla Iosa</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    homemade spicy sausage, button & oyster mushrooms, peas,
+                    parmigiano, extra-virgin olive oil
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">24$</p>
               </div>
             </div>
           </div>
@@ -342,11 +495,11 @@
           <div class="menu-content menu-content__4">
             <div class="menu-content__item">
               <div class="menu-item__left">
-                <div class="menu-item__title"><p>Calamari alla Griglia</p></div>
+                <div class="menu-item__title"><p>Affitisciuta</p></div>
                 <div class="menu-item__description">
                   <p>
-                    grilled calamari, mixed greens, capers, onions, fresh
-                    tomatoes
+                    tomato, mozzarella, smoked scamorza, homemade spicy Italian
+                    sausage
                   </p>
                 </div>
               </div>
@@ -357,10 +510,150 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
                 <p class="price">20$</p>
+              </div>
+            </div>
+
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Bufalina</p></div>
+                <div class="menu-item__description">
+                  <p>tomato, mozzarella di bufala, basil</p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">22$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Capricciosa</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    tomato, mozzarella, mushrooms, artichokes, olives with pits,
+                    Italian ham
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">22$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Ciccio</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    folded Pizza with prosciutto di parma, arugula, fresh
+                    tomatoes, fior di latte
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">24$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Contadina</p></div>
+                <div class="menu-item__description">
+                  <p>Tomato, burrata, roasted tomatoes, grana padano, basil</p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">21$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Don Corrado</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    white pizza with mozzarella, gorgonzola, potatoes, homemade
+                    spicy sausage, fresh rosemary
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">20$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Quattro Stagioni</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    tomato, mozzarella, 1/4 prosciutto di parma, 1/4 mushrooms,
+                    1/4 eggplant, 1/4 zucchini, olives with pits
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">23$</p>
               </div>
             </div>
           </div>
@@ -368,11 +661,11 @@
           <div class="menu-content menu-content__5">
             <div class="menu-content__item">
               <div class="menu-item__left">
-                <div class="menu-item__title"><p>Calamari alla Griglia</p></div>
+                <div class="menu-item__title"><p>Budino di Caramello</p></div>
                 <div class="menu-item__description">
                   <p>
-                    grilled calamari, mixed greens, capers, onions, fresh
-                    tomatoes
+                    butterscotch pudding, vanilla caramel, shortbread cookie,
+                    rosemary salt
                   </p>
                 </div>
               </div>
@@ -383,10 +676,107 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
-                <p class="price">20$</p>
+                <p class="price">12$</p>
+              </div>
+            </div>
+
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Gelato Artigianale</p></div>
+                <div class="menu-item__description">
+                  <p>2 scoops of Gelato, pistachio add 2$ per scoop</p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">11$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Johhny Stecchino</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    Nutella in dark chocolate crema, crema in milk chocolate,
+                    hazelnut in milk chocolate
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">7$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Tagliere di Formaggi</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    a selection of four artisinal cheese, honey, homemade jams,
+                    taralli & fresh fruit
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">23$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title">
+                  <p>Torta Calda al Cioccolato</p>
+                </div>
+                <div class="menu-item__description">
+                  <p>
+                    warm flourless dark chocolate cake, with white chocolate
+                    ganache
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">12$</p>
               </div>
             </div>
           </div>
@@ -394,11 +784,56 @@
           <div class="menu-content menu-content__6">
             <div class="menu-content__item">
               <div class="menu-item__left">
-                <div class="menu-item__title"><p>Calamari alla Griglia</p></div>
+                <div class="menu-item__title"><p>A Fagiolo</p></div>
+                <div class="menu-item__description">
+                  <p>mixed greens, kidney beans, red onion, tomatoes, basil</p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">15$</p>
+              </div>
+            </div>
+
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Caprese</p></div>
+                <div class="menu-item__description">
+                  <p>fior di latte, tomatoes, basil</p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">15$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title">
+                  <p>Caprese di Bufala *no bread crumbs</p>
+                </div>
                 <div class="menu-item__description">
                   <p>
-                    grilled calamari, mixed greens, capers, onions, fresh
-                    tomatoes
+                    fresh buffalo milk mozzarella, marinated cherry tomatoes,
+                    micro basil
                   </p>
                 </div>
               </div>
@@ -409,6 +844,56 @@
                   type="number"
                   placeholder="0"
                   min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">22$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Carpaccio di Manzo</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    hand cut, raw cumbrae's beef tenderloin, lemon juice,
+                    extra-virgin olive oil, parmigiano reggiano shavings,
+                    arugula
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
+                />
+                <button class="operation-button minus">-</button>
+                <button class="add-button">Add</button>
+                <p class="price">16$</p>
+              </div>
+            </div>
+            <div class="menu-content__item">
+              <div class="menu-item__left">
+                <div class="menu-item__title"><p>Giuggiolosa</p></div>
+                <div class="menu-item__description">
+                  <p>
+                    mixed greens, grilled red peppers, black olives (with pits),
+                    pine nuts
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item__right">
+                <button class="operation-button plus">+</button>
+                <input
+                  class="input-amount"
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  value="0"
                 />
                 <button class="operation-button minus">-</button>
                 <button class="add-button">Add</button>
