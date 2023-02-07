@@ -6,11 +6,11 @@ const friday = document.querySelector(".friday");
 const saturday = document.querySelector(".saturday");
 const sonday = document.querySelector(".sonday");
 const openingDays = document.querySelectorAll(".day-opening-hour");
+const tabsContainer = document.querySelector(".menu-tabs__container");
+const menuTabs = document.querySelectorAll(".menu-tabs__item");
+const menuContent = document.querySelectorAll(".menu-content");
 const d = new Date();
 let day = d.getDay();
-openingDays.forEach((d) => {
-  d.classList.remove("active-day");
-});
 
 switch (day) {
   case 1:
@@ -40,3 +40,17 @@ switch (day) {
   default:
     console.log("something went wrong");
 }
+
+tabsContainer.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".menu-tabs__item");
+  if (!clicked) return;
+  menuTabs.forEach((tab) => tab.classList.remove("menu-tabs__active"));
+  clicked.classList.add("menu-tabs__active");
+  menuContent.forEach((content) => {
+    console.log(content);
+    content.classList.remove("menu-content__active");
+  });
+  document
+    .querySelector(`.menu-content__${clicked.dataset.tab}`)
+    .classList.add("menu-content__active");
+});

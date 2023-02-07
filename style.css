@@ -1014,8 +1014,13 @@ iframe {
 }
 .menu-content {
   width: 100%;
+  display: none;
+}
+.menu-content__active {
+  display: block;
 }
 .menu-content__container {
+  min-height: 400px;
   max-width: 1500px;
   margin: auto;
   display: flex;
@@ -1099,7 +1104,7 @@ input::-webkit-inner-spin-button {
 .active-day p {
   color: #fff8c4 !important;
 }
-.menu-tab__active {
+.menu-tabs__active {
   background-color: #333;
   color: #f3f3f3;
 }
