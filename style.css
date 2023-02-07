@@ -952,7 +952,7 @@ iframe {
   height: 72vh;
 }
 .content-menu {
-  height: 72vh;
+  height: 70vh;
 }
 .menu-opening-hours {
   width: 100%;
@@ -962,6 +962,7 @@ iframe {
 .opening-hours__container {
   width: 100%;
   max-width: 1660px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -972,4 +973,111 @@ iframe {
   color: #f3f3f3;
   font-size: 1.5rem;
   text-align: center;
+}
+@media screen and (min-width: 1050px) {
+  .menu-opening-hours {
+    height: 25vh;
+  }
+  .hero-menu {
+    height: 75vh;
+  }
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  padding: 40px 0px;
+}
+.menu-tabs__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1500px;
+  margin: auto;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+.menu-tabs__item {
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  transition: 0.3s all;
+}
+
+.menu-tabs__item:hover {
+  cursor: pointer;
+  background-color: #333;
+  color: #f3f3f3;
+}
+.menu-content {
+  width: 100%;
+}
+.menu-content__container {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu-content__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.menu-item__left {
+  width: 65%;
+}
+.menu-item__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.menu-item__description {
+  font-size: 1.2rem;
+}
+.operation-button {
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+.add-button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: inherit;
+  font-size: 1.4rem;
+}
+.menu-item__right {
+  display: flex;
+  flex-direction: row-reverse;
+
+  justify-content: space-between;
+}
+.menu-item__right input {
+  background-color: inherit;
+  border: none;
+  width: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
 }
