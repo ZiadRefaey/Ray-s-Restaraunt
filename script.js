@@ -41,6 +41,7 @@ tabContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".reviews-tab");
   if (!clicked) return;
   tabs.forEach((t) => {
+    console.log(t);
     t.classList.remove("reviews-tab__active");
   });
   clicked.classList.add("reviews-tab__active");
@@ -49,7 +50,6 @@ tabContainer.addEventListener("click", function (e) {
     r.classList.remove("reviews-content__active");
   });
   const variable = document.querySelector(`.reviews-content__${datatab}`);
-  console.log(variable);
   document
     .querySelector(`.reviews-content__${datatab}`)
     .classList.add("reviews-content__active");

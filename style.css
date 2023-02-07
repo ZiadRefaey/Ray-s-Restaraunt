@@ -968,11 +968,13 @@ iframe {
   justify-content: space-evenly;
   margin: auto;
   padding: 1.6rem 0px;
+  z-index: 1;
 }
 .opening-hours__container p {
   color: #f3f3f3;
   font-size: 1.5rem;
   text-align: center;
+  z-index: 1;
 }
 @media screen and (min-width: 1050px) {
   .menu-opening-hours {
@@ -1054,7 +1056,14 @@ iframe {
   border: none;
   background-color: inherit;
   font-size: 1.4rem;
+  cursor: pointer;
+  margin: 0px 10px;
 }
+.add-button:hover {
+  background-color: #333;
+  color: #f3f3f3;
+}
+
 .menu-item__right {
   display: flex;
   flex-direction: row-reverse;
@@ -1067,8 +1076,11 @@ iframe {
   width: 4rem;
   text-align: center;
   font-size: 1.5rem;
-  border: solid 1px black;
+  color: #333;
   border-radius: 10px;
+}
+.menu-item__right input::placeholder {
+  color: #333;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1080,4 +1092,14 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+}
+.active-day {
+  color: #fff8c4 !important;
+}
+.active-day p {
+  color: #fff8c4 !important;
+}
+.menu-tab__active {
+  background-color: #333;
+  color: #f3f3f3;
 }
