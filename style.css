@@ -12,26 +12,27 @@ body {
   overflow-x: hidden;
   background-color: #f3f3f3;
 }
-/* body * {
-  z-index: 10;
-} */
 
 .scroll-hidden {
   overflow-y: hidden;
 }
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
   width: 100vw;
-  height: 13vh;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 15;
 }
 
+.sticky {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .hero {
   height: 100vh;
   width: 100vw;
@@ -1191,97 +1192,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 100px;
   z-index: 1;
 }
-/* .who-we-are {
-  padding: 4rem;
-  z-index: 1;
-  margin-bottom: 10px;
-}
-.who-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.who-img {
-  height: 100%;
 
-  width: 100%;
-  position: relative;
-}
-.who-container {
-  height: 70vh;
-  width: 100%;
-  z-index: 1;
-}
-.who-text__container {
-  z-index: 1;
-  position: absolute;
-  top: 40px;
-  right: 60px;
-  background-color: rgb(51, 51, 51, 0.6);
-  padding: 0rem;
-  width: 40%;
-}
-
-.who-text__container h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  z-index: 1;
-}
-.who-text__container p {
-  font-size: 1.2rem;
-}
-.who-text__container p,
-.who-text__container h3 {
-  color: #f3f3f3;
-  padding: 0px;
-}
-@media screen and (max-width: 1350px) {
-  .who-text__container h3 {
-    font-size: 1.3rem;
-  }
-  .who-text__container p {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 1110px) {
-  .who-text__container {
-    z-index: 1;
-    position: absolute;
-    top: 270px;
-    padding: 0px 0px;
-    background-color: rgb(51, 51, 51, 0.6);
-    padding: 2rem;
-    width: 80%;
-  }
-}
-@media screen and (max-width: 820px) {
-  .who-text__container h3 {
-    font-size: 1.6rem;
-  }
-  .who-text__container p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
-  }
-  .who-text__container h3 {
-    text-align: center;
-    background-color: #333;
-    padding: 1rem;
-    margin-top: 0;
-    border-radius: 0px;
-  }
-  .who-text__container {
-    position: static;
-    padding: 0rem;
-    width: 100%;
-    background-color: inherit;
-  }
-  .who-img {
-    height: 100%;
-    width: 100%;
-    position: static;
-  }
-} */
 .who-container {
   display: flex;
   align-items: start;
@@ -1347,11 +1258,7 @@ input::-webkit-inner-spin-button {
   .who-text__container p {
     font-size: 1.2rem;
   }
-  /* .who-img {
-    width: 80%;
-    height: 100%;
-    padding: 0px 2rem 1rem 2rem;
-  } */
+
   .who-img {
     width: 100%;
     height: 30vh;
@@ -1422,4 +1329,8 @@ input::-webkit-inner-spin-button {
 }
 a {
   text-decoration: none;
+}
+.hidden-section {
+  opacity: 0;
+  transform: translateY(8rem);
 }
