@@ -4,6 +4,9 @@
   padding: 0;
   color: #333;
 }
+h3 {
+  padding: 0;
+}
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
@@ -560,6 +563,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
+  color: #333;
 }
 .rooms-header p {
   text-align: center;
@@ -616,6 +620,9 @@ h1 {
   justify-content: space-between;
   max-width: 1260px;
   display: none;
+}
+.rooms-content a {
+  text-decoration: underline;
 }
 .room {
   width: 350px;
@@ -682,6 +689,10 @@ h1 {
 }
 .rooms-content__active {
   display: flex;
+}
+.inquire__title {
+  color: #333;
+  padding: 0px;
 }
 .inquire-container {
   margin: auto;
@@ -1408,4 +1419,7 @@ input::-webkit-inner-spin-button {
   .what-text__container {
     width: 80%;
   }
+}
+a {
+  text-decoration: none;
 }

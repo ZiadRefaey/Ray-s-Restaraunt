@@ -11,6 +11,13 @@
   transition: background-color 0.5s, color 0.25s;
 }
 .btn:hover {
-  background-color: #f1f1f1;
+  background-color: #f3f3f3;
+  color: #333;
+}
+.hero-btn a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+.hero-btn a:hover {
   color: #333;
 }
