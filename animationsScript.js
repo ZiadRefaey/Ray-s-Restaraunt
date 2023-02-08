@@ -15,8 +15,8 @@ const obsOptions = {
   rootMargin: "-100px",
 };
 
-// const observerHeader = new IntersectionObserver(obsCallBack, obsOptions);
-// observerHeader.observe(header);
+const observerHeader = new IntersectionObserver(obsCallBack, obsOptions);
+observerHeader.observe(header);
 
 // function obsSectionsCallback(enteries, observer) {
 //   const [entery] = enteries;
