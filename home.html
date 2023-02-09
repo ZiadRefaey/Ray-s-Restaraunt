@@ -58,7 +58,9 @@
             </div>
             <div class="navbar-group__middle">
               <li class="navbar-list__item3">
-                <a href="home.html"><img src="/Assets/WhiteLogo.png" /></a>
+                <a href="home.html"
+                  ><img loading="lazy" src="/Assets/WhiteLogo.png"
+                /></a>
               </li>
             </div>
             <div class="navbar-group__right">
@@ -75,7 +77,11 @@
       </div>
       <div class="mobile-nav">
         <div class="mobile-nav__header">
-          <img src="/Assets/WhiteLogo.png" alt="Ray's Restauraunt logo" />
+          <img
+            loading="lazy"
+            src="/Assets/WhiteLogo.png"
+            alt="Ray's Restauraunt logo"
+          />
           <i class="fa-solid fa-xmark"></i>
         </div>
         <nav class="mobile-nav__body">
@@ -96,13 +102,13 @@
         </div>
       </div>
     </header>
-    <section class="featured-meals section">
+    <section class="featured-meals">
       <h3 class="featured-meals__header">Featured Meals</h3>
-      <div class="swiper swiper-featured-meals">
+      <div class="swiper swiper-featured-meals section">
         <div class="swiper-wrapper">
           <div class="card-content swiper-slide">
             <div class="card-content__img">
-              <img src="/Assets/Shrimp Pasta.jpg" />
+              <img loading="lazy" src="/Assets/Shrimp Pasta.jpg" />
             </div>
             <div class="card-content__details">
               <p>Shrimp Pasta</p>
@@ -111,7 +117,7 @@
           </div>
           <div class="card-content swiper-slide">
             <div class="card-content__img">
-              <img src="/Assets/Pizza 2.jpg" />
+              <img loading="lazy" src="/Assets/Pizza 2.jpg" />
             </div>
             <div class="card-content__details">
               <p>Mix Pizza</p>
@@ -120,7 +126,7 @@
           </div>
           <div class="card-content swiper-slide">
             <div class="card-content__img">
-              <img src="/Assets/pepperoni pizza.jpg" />
+              <img loading="lazy" src="/Assets/pepperoni pizza.jpg" />
             </div>
             <div class="card-content__details">
               <p>Pepperoni Pizza</p>
@@ -129,7 +135,7 @@
           </div>
           <div class="card-content swiper-slide">
             <div class="card-content__img">
-              <img src="/Assets/Spaghetti Aglio e Olio.jpg" />
+              <img loading="lazy" src="/Assets/Spaghetti Aglio e Olio.jpg" />
             </div>
             <div class="card-content__details">
               <p>Spaghetti Aglio e Olio</p>
@@ -138,7 +144,7 @@
           </div>
           <div class="card-content swiper-slide">
             <div class="card-content__img">
-              <img src="/Assets/Pasta.jpg" />
+              <img loading="lazy" src="/Assets/Pasta.jpg" />
             </div>
             <div class="card-content__details">
               <p>Pasta</p>
@@ -160,10 +166,16 @@
         </div>
       </div>
     </section>
-    <section class="about section">
-      <div class="about-container">
+    <section class="about">
+      <div class="about-container section">
         <div class="about-img">
-          <img src="/Assets/restaurant front.jpg" alt="Restaurant Front" />
+          <img
+            class="test-img"
+            loading="lazy"
+            src="Assets/restaurant front.jpg"
+            data-src="/Assets/restaurant front.jpg"
+            alt="Restaurant Front"
+          />
         </div>
         <div class="about-description">
           <h3 class="about-description__title">Ray's Restaurant</h3>
@@ -181,7 +193,7 @@
     </section>
     <section class="testimonials">
       <div class="testimonials-title"><h3>Reviews</h3></div>
-      <div class="testimonals-container">
+      <div class="testimonals-container section">
         <div class="reviews-container">
           <div class="reviews-tabs__container">
             <div
@@ -189,7 +201,12 @@
               data-tab="1"
             >
               <div class="reviews-tab__img">
-                <img src="/Assets/profile 1.jpg" alt="Profile Picture" />
+                <img
+                  src="Assets/Low Quality/whiteImage.png"
+                  loading="lazy"
+                  data-src="/Assets/profile 1.jpg"
+                  alt="Profile Picture"
+                />
               </div>
               <div class="reviews-tab__details">
                 <div class="reviews-tab__name">Andrew Tate</div>
@@ -198,7 +215,12 @@
             </div>
             <div class="reviews-tab reviews-tab__2" data-tab="2">
               <div class="reviews-tab__img">
-                <img src="/Assets/profile 2.jpg" alt="Profile Picture" />
+                <img
+                  src="Assets/Low Quality/whiteImage.png"
+                  data-src="/Assets/profile 2.jpg"
+                  loading="lazy"
+                  alt="Profile Picture"
+                />
               </div>
               <div class="reviews-tab__details">
                 <div class="reviews-tab__name">Jane Miller</div>
@@ -207,7 +229,12 @@
             </div>
             <div class="reviews-tab reviews-tab__3" data-tab="3">
               <div class="reviews-tab__img">
-                <img src="/Assets/profile 3.jpg" alt="Profile Picture" />
+                <img
+                  src="Assets/Low Quality/whiteImage.png"
+                  loading="lazy"
+                  data-src="/Assets/profile 3.jpg"
+                  alt="Profile Picture"
+                />
               </div>
               <div class="reviews-tab__details">
                 <div class="reviews-tab__name">Robert Davis</div>
@@ -301,7 +328,7 @@
       </div>
     </footer>
   </body>
-  <script src="animationsScript.js"></script>
+  <script src="animationsScript.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </html>

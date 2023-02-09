@@ -13,17 +13,17 @@ const inputAmount = document.querySelectorAll(".input-amount");
 const plus = document.querySelectorAll(".plus");
 const minus = document.querySelectorAll(".minus");
 const addBtn = document.querySelectorAll(".add-button");
-const hamburger = document.querySelector(".hamburger");
-const mobileNav = document.querySelector(".mobile-nav");
-const xMark = document.querySelector(".fa-xmark");
-document.querySelector(".hamburger").addEventListener("click", function () {
-  mobileNav.classList.add("is-active");
-  body.classList.add("scroll-hidden");
-});
-xMark.addEventListener("click", function () {
-  mobileNav.classList.remove("is-active");
-  body.classList.remove("scroll-hidden");
-});
+// const hamburger = document.querySelector(".hamburger");
+// const mobileNav = document.querySelector(".mobile-nav");
+// const xMark = document.querySelector(".fa-xmark");
+// document.querySelector(".hamburger").addEventListener("click", function () {
+//   mobileNav.classList.add("is-active");
+//   body.classList.add("scroll-hidden");
+// });
+// xMark.addEventListener("click", function () {
+//   mobileNav.classList.remove("is-active");
+//   body.classList.remove("scroll-hidden");
+// });
 const d = new Date();
 let day = d.getDay();
 // value = 0;
@@ -56,18 +56,22 @@ switch (day) {
   default:
     console.log("something went wrong");
 }
+
 tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".menu-tabs__item");
   if (!clicked) return;
   menuTabs.forEach((tab) => tab.classList.remove("menu-tabs__active"));
   clicked.classList.add("menu-tabs__active");
   menuContent.forEach((content) => {
-    console.log(content);
     content.classList.remove("menu-content__active");
+    content.classList.add("section-hidden");
   });
   document
     .querySelector(`.menu-content__${clicked.dataset.tab}`)
     .classList.add("menu-content__active");
+  document
+    .querySelector(`.menu-content__${clicked.dataset.tab}`)
+    .classList.remove("section-hidden");
 });
 
 plus.forEach((plus) => {
