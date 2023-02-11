@@ -38,7 +38,6 @@ const targetImgs = document.querySelectorAll("img[data-src]");
 function imgObsCallBack(enteries, observer) {
   const [entry] = enteries;
   if (!entry.isIntersecting) return;
-  console.log(entry.target.dataset);
   entry.target.src = entry.target.dataset.src;
   imgObserver.unobserve(entry.target);
 }
