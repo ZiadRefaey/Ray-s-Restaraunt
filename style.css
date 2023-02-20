@@ -36,7 +36,7 @@ body {
 .hero {
   height: 100vh;
   width: 100vw;
-  background-image: url("./Assets/Background\ 3\ cropped.jpg");
+  background-image: url("./Assets/Rays\ Restaurant/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -484,7 +484,8 @@ h1 {
 /*/////// EVENTS PAGE ///////*/
 
 .hero-events {
-  background-image: url("/Assets/Events\ 2.jpg");
+  background-image: url("/Assets/Host\ Your\ Event/Events2.jpg");
+  height: 35rem;
 }
 .title-section {
   height: 30vh;
@@ -500,7 +501,8 @@ h1 {
   z-index: 1;
 }
 .title-section__container {
-  font-size: 30px;
+  font-size: 48px;
+  padding: 40px 0px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -660,22 +662,22 @@ h1 {
 }
 .room__1 {
   z-index: 1;
-  background-image: url("./Assets/bar\ 1.jpg");
+  background-image: url("./Assets/Host\ Your\ Event/bar1.jpg");
 }
 .room__2 {
-  background-image: url("./Assets/bar\ 2.jpg");
+  background-image: url("./Assets/Host\ Your\ Event/bar2.jpg");
 }
 .room__3 {
-  background-image: url("/Assets/dining\ 1.jpg");
+  background-image: url("/Assets/Host\ Your\ Event/dining1.jpg");
 }
 .room__4 {
-  background-image: url("/Assets/dining\ 3.jpg");
+  background-image: url("/Assets/Host\ Your\ Event/dining2.jpg");
 }
 .room__5 {
-  background-image: url("/Assets/Al\ Fresco\ 2.jpg");
+  background-image: url("/Assets/Host\ Your\ Event/AlFresco2.jpg");
 }
 .room__6 {
-  background-image: url("/Assets/Al\ Fresco\ 3.jpg");
+  background-image: url("/Assets/Host\ Your\ Event/AlFresco3.jpg");
 }
 .room::before {
   position: absolute;
@@ -964,7 +966,7 @@ iframe {
   }
 }
 .hero-menu {
-  background-image: url("/Assets/Menu\ 3.jpg");
+  background-image: url("/Assets/Menu/Menu.jpg");
   height: 72vh;
 }
 .content-menu {
@@ -1192,7 +1194,7 @@ input::-webkit-inner-spin-button {
 }
 
 .about-us-hero {
-  background-image: url("/Assets/restaurant\ 2.jpg");
+  background-image: url("/Assets/AboutUs/hero.jpg");
   height: 70vh;
   margin-bottom: 100px;
   z-index: 1;
@@ -1275,7 +1277,7 @@ input::-webkit-inner-spin-button {
   margin-top: 50px;
   width: 100%;
   padding: 2rem;
-  background-image: url("./Assets/what-we-offer.jpg");
+  background-image: url("./Assets/AboutUs/what-we-offer.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
