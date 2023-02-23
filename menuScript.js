@@ -9,10 +9,7 @@ const openingDays = document.querySelectorAll(".day-opening-hour");
 const tabsContainer = document.querySelector(".menu-tabs__container");
 const menuTabs = document.querySelectorAll(".menu-tabs__item");
 const menuContent = document.querySelectorAll(".menu-content");
-const inputAmount = document.querySelectorAll(".input-amount");
-const plus = document.querySelectorAll(".plus");
-const minus = document.querySelectorAll(".minus");
-const addBtn = document.querySelectorAll(".add-button");
+
 // const hamburger = document.querySelector(".hamburger");
 // const mobileNav = document.querySelector(".mobile-nav");
 // const xMark = document.querySelector(".fa-xmark");
@@ -72,31 +69,4 @@ tabsContainer.addEventListener("click", function (e) {
   document
     .querySelector(`.menu-content__${clicked.dataset.tab}`)
     .classList.remove("section-hidden");
-});
-
-plus.forEach((plus) => {
-  plus.addEventListener("click", function (e) {
-    const inputField = e.target.parentNode.childNodes[3];
-    value = parseInt(inputField.value);
-    value += 1;
-    inputField.value = value;
-  });
-});
-minus.forEach((minus) => {
-  minus.addEventListener("click", function (e) {
-    const inputField = e.target.parentNode.childNodes[3];
-    value = parseInt(inputField.value);
-    if (value == 0) return;
-    value -= 1;
-    inputField.value = value;
-  });
-});
-addBtn.forEach((btn) => {
-  btn.addEventListener("click", function (e) {
-    const inputField = e.target.parentNode.childNodes[3];
-    value = parseInt(inputField.value);
-    if (value == 0) return;
-
-    inputField.value = "0";
-  });
 });

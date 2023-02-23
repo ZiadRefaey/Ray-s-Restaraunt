@@ -98,7 +98,7 @@ h1 {
   cursor: pointer;
 }
 .navbar-list__item:hover {
-  border-bottom: 2px solid #f3f3f3;
+  border-bottom: 2px solid #fff8c4;
 }
 .hamburger {
   z-index: 120;
@@ -614,11 +614,11 @@ h1 {
 }
 .room-tab:hover {
   cursor: pointer;
-  background-color: #f3f3f3;
+  background-color: #fff8c4;
   color: #333;
 }
 .rooms-tab__active {
-  background-color: #f3f3f3;
+  background-color: #fff8c4;
   color: #333;
 }
 .rooms-content {
@@ -1034,7 +1034,7 @@ iframe {
 .menu-tabs__item:hover {
   cursor: pointer;
   background-color: #333;
-  color: #f3f3f3;
+  color: #fff8c4;
 }
 .menu-content {
   width: 100%;
@@ -1132,7 +1132,7 @@ input::-webkit-inner-spin-button {
 }
 .menu-tabs__active {
   background-color: #333;
-  color: #f3f3f3;
+  color: #fff8c4;
 }
 .tabs-left,
 .tabs-right {
@@ -1347,5 +1347,5 @@ a {
 }
 
 .nav-active {
-  border-bottom: 2px solid #f3f3f3;
+  border-bottom: 2px solid #fff8c4;
 }
