@@ -485,7 +485,10 @@ h1 {
 
 .hero-events {
   background-image: url("/Assets/Host\ Your\ Event/Events2.jpg");
-  height: 35rem;
+  height: 100%;
+}
+.content {
+  height: 100%;
 }
 .title-section {
   padding: 50px 0px;

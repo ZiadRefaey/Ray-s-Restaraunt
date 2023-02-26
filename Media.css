@@ -60,7 +60,9 @@
 
 @media screen and (max-width: 750px) {
   .about-description p {
+    margin: auto;
     font-size: 14px;
+    padding: 20px;
     text-align: center;
     max-width: 450px;
   }
