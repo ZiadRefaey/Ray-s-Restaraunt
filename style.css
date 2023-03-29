@@ -62,8 +62,10 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
   height: 100%;
-  width: 1260px;
+  width: 90%;
+  max-width: 1260px;
 }
 .navbar-list a,
 .navbar-list li {
@@ -76,13 +78,14 @@ h1 {
 .navbar-group__middle {
   width: 8rem;
   cursor: pointer;
-  transition: width 0.5s;
+  transition: all 0.5s;
 }
 .navbar-group__middle:hover {
-  width: 9rem;
+  transform: scale(1.15);
 }
 .navbar-group__middle img {
   max-width: 100%;
+  margin: auto;
 }
 .navbar-group__left,
 .navbar-group__right {
@@ -488,7 +491,7 @@ h1 {
   height: 100%;
 }
 .content {
-  height: 100%;
+  height: 100% !important;
 }
 .title-section {
   padding: 50px 0px;
@@ -1005,7 +1008,7 @@ iframe {
   height: 72vh;
 }
 .content-menu {
-  height: 70vh;
+  height: 70vh !important;
 }
 .menu-opening-hours {
   width: 100%;

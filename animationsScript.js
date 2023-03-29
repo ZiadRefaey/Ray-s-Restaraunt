@@ -51,22 +51,22 @@ targetImgs.forEach((target) => imgObserver.observe(target));
 
 // Reveal Sections
 
-const sections = document.querySelectorAll(".section");
+// const sections = document.querySelectorAll(".section");
 
-function obsSectionsCallback(entries, observer) {
-  const [entry] = entries;
-  if (entry.isIntersecting) {
-    entry.target.classList.remove("section-hidden");
-  } else {
-    entry.target.classList.add("section-hidden");
-  }
-  // sectionObserver.unobserve(entry.target)
-}
-const sectionObserver = new IntersectionObserver(obsSectionsCallback, {
-  root: null,
-  threshold: 0.1,
-});
-sections.forEach((section) => {
-  sectionObserver.observe(section);
-  section.classList.add("section-hidden");
-});
+// function obsSectionsCallback(entries, observer) {
+//   const [entry] = entries;
+//   if (entry.isIntersecting) {
+//     entry.target.classList.remove("section-hidden");
+//   } else {
+//     entry.target.classList.add("section-hidden");
+//   }
+//   // sectionObserver.unobserve(entry.target)
+// }
+// const sectionObserver = new IntersectionObserver(obsSectionsCallback, {
+//   root: null,
+//   threshold: 0.1,
+// });
+// sections.forEach((section) => {
+//   sectionObserver.observe(section);
+//   section.classList.add("section-hidden");
+// });
